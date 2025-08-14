@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>WEDDING RESERVATION | GOURMET GATEWAY</title>
+        <link rel="stylesheet" type="text/css" href="Mystyles.css">
+    </head>
+    <body>
+
+        <div class="form">
+            <h2>Wedding Reservation Form</h2>
+
+            <p><b>Plan Your Dream Wedding with Us!</b><br>
+                At Gourmet Gateway Hotel, we specialize in creating unforgettable weddings tailored to your needs. Our team is ready to assist you in planning every detail,
+                from the venue to the menu. Please fill out the reservation form below to begin planning your perfect day. We will get in touch with you shortly 
+                to confirm availability and discuss your special requests.
+            </p>
+
+            <form action="wedding_reservation.php" method="post">
+                <!-- Personal Information Section -->
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
+                
+                <!-- Event Details Section -->
+                <label for="date">Wedding Date</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" placeholder="Estimated Number of Guests" required>
+
+                <label for="venue">Preferred Venue</label>
+                <select id="venue" name="venue" required>
+                    <option value="" disabled selected>Select a venue</option>
+                    <option value="ballroom">Grand Ballroom</option>
+                    <option value="garden">Garden Terrace</option>
+                    <option value="rooftop">Rooftop</option>
+                </select>
+                
+                <!-- Additional Details Section -->
+                <label for="comments">Special Requests/Comments</label>
+                <textarea id="comments" name="comments" rows="5" placeholder="Any special requirements or requests"></textarea>
+                
+                <!-- Submit Button -->
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </div>
+
+    </body>
+</html>

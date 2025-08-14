@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>EVENT RESERVATION GOURMET GATEWAY</title>
+        <link rel="stylesheet" type="text/css" href="Mystyles.css">
+    </head>
+    <body>
+        <div class="form">
+            <h2>Reserved Your Event in Your Own Way</h2>
+            <form action="submit-reservation.php" method="post">
+
+                <!-- Organizer Information -->
+                <h3>Organizer Information</h3>
+                <label for="organizer-name">Full Name:</label><br>
+                <input type="text" id="organizer-name" name="organizer-name" placeholder="Enter your full name" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+
+                <!-- Event Details -->
+                <h3>Event Details</h3>
+                <label for="event-type">Event Type:</label><br>
+                <select id="event-type" name="event-type" required>
+                    <option value="">Select Event Type</option>
+                    <option value="meeting">Meeting</option>
+                    <option value="family-gathering">Family Gathering</option>
+                    <option value="company-gathering">Company Gathering</option>
+                    <option value="party">Party</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <label for="event-date">Event Date:</label><br>
+                <input type="date" id="event-date" name="event-date" required><br><br>
+
+                <label for="start-time">Start Time:</label><br>
+                <input type="time" id="start-time" name="start-time" required><br><br>
+
+                <label for="end-time">End Time:</label><br>
+                <input type="time" id="end-time" name="end-time" required><br><br>
+
+                <!-- Attendee Information -->
+                <h3>Attendee Information</h3>
+                <label for="attendees">Number of Attendees:</label><br>
+                <input type="number" id="attendees" name="attendees" min="1" max="500" required><br><br>
+
+                <!-- Venue Setup -->
+                <h3>Venue Setup</h3>
+                <label for="venue-type">Preferred Venue Setup:</label><br>
+                <select id="venue-type" name="venue-type" required>
+                    <option value="">Select Venue Setup</option>
+                    <option value="conference">Conference Style</option>
+                    <option value="banquet">Banquet Style</option>
+                    <option value="theater">Theater Style</option>
+                    <option value="u-shape">U-Shape Style</option>
+                    <option value="classroom">Classroom Style</option>
+                    <option value="cocktail">Cocktail Reception</option>
+                </select><br><br>
+
+                <!-- Additional Requirements -->
+                <h3>Additional Requirements</h3>
+                <label for="equipment">Equipment Needed (Select all that apply):</label><br>
+                <input type="checkbox" id="projector" name="equipment" value="projector">
+                <label for="projector">Projector</label><br>
+                <input type="checkbox" id="microphone" name="equipment" value="microphone">
+                <label for="microphone">Microphone</label><br>
+                <input type="checkbox" id="sound-system" name="equipment" value="sound-system">
+                <label for="sound-system">Sound System</label><br>
+                <input type="checkbox" id="whiteboard" name="equipment" value="whiteboard">
+                <label for="whiteboard">Whiteboard</label><br><br>
+
+                <label for="special-requests">Special Requests or Dietary Requirements:</label><br>
+                <textarea id="special-requests" name="special-requests" placeholder="Enter any special requirements (e.g., dietary, seating)" rows="4"></textarea><br><br>
+
+                <!-- Payment and Confirmation -->
+                <h3>Payment Information</h3>
+                <label for="payment-method">Payment Method:</label><br>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                    <option value="cash">Cash on Arrival</option>
+                </select><br><br>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Reservation</button>
+            
+            </form>
+        </div>
+    </body>
+</html>
