@@ -11,7 +11,8 @@
                 Please fill out the reservation form below to book your appointment. We offer a variety of treatments, 
                 from full-body massages to facials, manicures, and pedicures. Our team will contact you shortly to confirm your reservation and accommodate any special requests.
             </p>
-            <form action="spa_reservation.php" method="post">
+            <form action="../php/submit_form.php" method="post">
+                <input type="hidden" name="form_type" value="spa">
                 <!-- Personal Information Section -->
                 <label for="name">Full Name</label><br>
                 <input type="text" id="name" name="name" placeholder="Your Full Name" required><br><br>
@@ -53,5 +54,6 @@
 
     </body>
 </html>
+
 
 
