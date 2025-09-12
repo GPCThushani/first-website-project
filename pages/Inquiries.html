@@ -7,7 +7,8 @@
         <form>    
             <div class="form">
                 <h2>Inquiry Form</h2>
-                <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <form action="../php/submit_form.php" method="post">
+                <input type="hidden" name="form_type" value="inquiry">
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" required>
 
@@ -25,5 +26,6 @@
         </div>
     </body>
 </html>
+
 
 
