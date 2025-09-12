@@ -14,7 +14,8 @@
                 to confirm availability and discuss your special requests.
             </p>
 
-            <form action="wedding_reservation.php" method="post">
+            <form action="../php/submit_form.php" method="post">
+                <input type="hidden" name="form_type" value="wedding">
                 <!-- Personal Information Section -->
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" placeholder="Your Full Name" required>
@@ -51,5 +52,6 @@
 
     </body>
 </html>
+
 
 
